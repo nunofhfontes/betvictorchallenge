@@ -1,4 +1,4 @@
-package com.traderfactory.components;
+package com.challenge.components;
 
 
 import org.springframework.boot.SpringApplication;
@@ -8,13 +8,13 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-@ComponentScan("com.traderfactory")
-@EntityScan(basePackages = {"com.traderfactory.domain"} )
-@EnableJpaRepositories(basePackages = {"com.traderfactory.repository"} )
-public class TraderFactoryController {
+@ComponentScan("com.challenge")
+@EntityScan(basePackages = {"com.challenge.domain"} )
+@EnableJpaRepositories(basePackages = {"com.challenge.repository"} )
+public class BetVictorChallengeController {
 	
 	public static void main(String[] args) {
-		SpringApplication.run(TraderFactoryController.class, args);
+		SpringApplication.run(BetVictorChallengeController.class, args);
 	}
 	
 }
